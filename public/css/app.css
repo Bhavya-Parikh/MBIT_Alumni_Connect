@@ -1,0 +1,16 @@
+body {
+  font-family: "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #DBE2EF;
+}
+
+nav li a {
+  transition: all 0.3s ease-in-out;
+}
+nav li a:hover {
+  color: #3F72AF;
+}
+
+.login-box {
+  background: #F9F7F7;
+}
