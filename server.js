@@ -9,7 +9,7 @@ const mongoose = require('mongoose')
 const session = require('express-session')
 const flash = require('express-flash')
 const MongoDbStore = require('connect-mongo')(session)
-//const passport = require('passport')
+const passport = require('passport')
 const bodyParser = require('body-parser');
 
 
@@ -39,11 +39,11 @@ app.use(session({
 }))
 
 //Passport config
-// const passportInit = require('./app/config/passport')
-// const certController = require('./app/http/controllers/certController')
-// passportInit(passport)
-// app.use(passport.initialize())
-// app.use(passport.session())
+const passportInit = require('./app/config/passport')
+//const certController = require('./app/http/controllers/certController')
+passportInit(passport)
+app.use(passport.initialize())
+app.use(passport.session())
 
 app.use(flash())
 //Assets
