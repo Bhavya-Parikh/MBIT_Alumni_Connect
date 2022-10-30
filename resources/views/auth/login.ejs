@@ -1,21 +1,21 @@
 <section class="log flex justify-center pt-24">
   <div class="w-full max-w-xs">
-    <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-      
+<form action="/login" method="POST" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
       <div class="w-full mb-2">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-          Email address
+          Email Address
         </label>
         <input name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="email" placeholder="Email address">
+
       </div>
       <div class="w-full ">
         <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
           Password
         </label>
         <input name="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
-      </div>
+       </div>
       <div class="flex items-center justify-between">
-        <button class="login-s-button text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline" type="button">
+        <button class="login-s-button text-white font-bold py-2 px-6 rounded focus:outline-none focus:shadow-outline" type="submit">
           Sign In
         </button>
         <a class="login-s-text inline-block align-baseline font-bold text-sm" href="#">
@@ -23,5 +23,8 @@
         </a>
       </div>
     </form>
+    <p class="text-center text-gray-500 text-xs">
+      &copy;MBIT Alumni Connect. All rights reserved.
+    </p>
   </div>
 </section>
