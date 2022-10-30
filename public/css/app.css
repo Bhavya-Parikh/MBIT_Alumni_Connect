@@ -12,11 +12,11 @@ nav li a:hover {
   color: #112D4E;
 }
 
-.login {
+.regis {
   background-color: #ccc;
 }
 
-.login-box {
+.regis-box {
   background: #F9F7F7;
 }
 
@@ -24,7 +24,7 @@ nav li a:hover {
   color: rgb(78, 89, 112);
 }
 
-.ac_button_large {
+.s-button {
   font-weight: 700;
   font-size: 16px;
   color: #fff;
@@ -36,7 +36,7 @@ nav li a:hover {
   padding: 12px 104px;
   transition: all 0.3s ease-in-out;
 }
-.ac_button_large:hover {
+.s-button:hover {
   background: #112D4E;
   cursor: pointer;
 }
