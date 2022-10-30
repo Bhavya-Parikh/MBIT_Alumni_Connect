@@ -40,3 +40,21 @@ nav li a:hover {
   background: #112D4E;
   cursor: pointer;
 }
+
+.login-s-button {
+  background: #3F72AF;
+  transition: all 0.3s ease-in-out;
+}
+.login-s-button:hover {
+  background: #112D4E;
+  cursor: pointer;
+}
+
+.login-s-text {
+  color: #3F72AF;
+  transition: all 0.3s ease-in-out;
+}
+.login-s-text:hover {
+  color: #112D4E;
+  cursor: pointer;
+}
