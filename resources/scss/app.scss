@@ -3,18 +3,45 @@
 body {
     font-family: 'Lato',sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: $secondary;
+    background-color: $gray;
 }
 
 nav li a {
+    color: $primary;
     transition: $smooth;
     &:hover {
-        color: $primary;
+        color: $primary-hover;
     }
 }
 
 //login
 
+.login{
+    background-color: $pure;
+}
+
 .login-box {
     background: $gray;
+}
+
+.year {
+    color: rgb(78, 89, 112);
+}
+
+
+.ac_button_large {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    background: $primary;
+    text-transform: capitalize;
+    text-align: center;
+    border: none;
+    padding: 12px 104px;
+    transition: $smooth;
+    &:hover {
+        background: $primary-hover;
+        cursor: pointer;
+    }
 }

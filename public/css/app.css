@@ -1,16 +1,42 @@
 body {
   font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
-  color: #DBE2EF;
+  background-color: #F9F7F7;
 }
 
 nav li a {
+  color: #3F72AF;
   transition: all 0.3s ease-in-out;
 }
 nav li a:hover {
-  color: #3F72AF;
+  color: #112D4E;
+}
+
+.login {
+  background-color: #ccc;
 }
 
 .login-box {
   background: #F9F7F7;
+}
+
+.year {
+  color: rgb(78, 89, 112);
+}
+
+.ac_button_large {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 3px;
+  background: #3F72AF;
+  text-transform: capitalize;
+  text-align: center;
+  border: none;
+  padding: 12px 104px;
+  transition: all 0.3s ease-in-out;
+}
+.ac_button_large:hover {
+  background: #112D4E;
+  cursor: pointer;
 }
