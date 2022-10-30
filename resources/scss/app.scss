@@ -45,3 +45,23 @@ nav li a {
         cursor: pointer;
     }
 }
+
+//login 
+
+.login-s-button{
+    background: $primary;
+    transition: $smooth;
+    &:hover {
+        background: $primary-hover;
+        cursor: pointer;
+    }
+}
+
+.login-s-text {
+    color: $primary;
+    transition: $smooth;
+    &:hover {
+        color: $primary-hover;
+        cursor: pointer;
+    }
+}
