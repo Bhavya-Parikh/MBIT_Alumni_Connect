@@ -7,7 +7,18 @@ const guest = require('../app/http/middlewares/guest')
 
 function initRoutes(app){
     app.get('/',homeController().index)
+    
+    //login
     app.get('/login',guest ,authController().login)
+    app.post('/login',authController().postLogin)
+
+    //register
+    app.get('/register',guest,authController().register)
+    app.post('/register',authController().postRegister)
+
+    //logout
+    app.post('/logout', authController().logout)
+
 }
 
 module.exports = initRoutes

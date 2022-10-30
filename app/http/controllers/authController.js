@@ -1,7 +1,7 @@
 const Student = require('../../models/student')
+const student = require('../../models/student')
 const bcrypt = require('bcrypt')
 const passport = require('passport')
-const student = require('../../models/student')
 
 function authController(){
     return {
