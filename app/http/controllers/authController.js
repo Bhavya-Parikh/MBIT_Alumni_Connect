@@ -15,7 +15,7 @@ function authController(){
             req.flash('error', 'All fields are required')
             return res.redirect('/login')
         }
-        passport.authenticate('local', (err, agent, info) => {
+        passport.authenticate('local', (err, student, info) => {
             if(err) {
                 req.flash('error', info.message )
                 return next(err)
@@ -38,11 +38,12 @@ function authController(){
         res.render('auth/register')
     },
     async postRegister(req, res) {
-     const { rollno,name,joining_year,graduation_year, email, password }   = req.body
+     const { rollno,firstname,lastname,joining_year,graduation_year, email, password }   = req.body
      // Validate request 
-     if(!name || !email || !password || !rollno || !joining_year || !graduation_year ) {
+     if(!firstname || !lastname || !email || !password || !rollno || !joining_year || !graduation_year ) {
          req.flash('error', 'All fields are required')
-         req.flash('name', name)
+         req.flash('firstname', firstname)
+         req.flash('lastname', lastname)
          req.flash('email', email)
          req.flash('password', password)
          req.flash('rollno', rollno)
@@ -55,7 +56,8 @@ function authController(){
     Student.exists({ email: email }, (err, result) => {
          if(result) {
             req.flash('error', 'Email already taken')
-            req.flash('name', name)
+            req.flash('firstname', firstname)
+            req.flash('lastname', lastname)
             req.flash('email', email) 
             req.flash('password', password)
             req.flash('rollno', rollno)
@@ -69,7 +71,8 @@ function authController(){
      const hashedPassword = await bcrypt.hash(password, 10)
      // Create a user 
      const student = new Student({
-         name,
+         firstname,
+         lastname,
          email,
          password: hashedPassword,
          rollno,
