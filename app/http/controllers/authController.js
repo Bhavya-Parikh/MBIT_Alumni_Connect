@@ -30,7 +30,7 @@ function authController(){
                     return next(err)
                 }
 
-                return res.redirect('/')
+                return res.redirect('tell-us-more')
             })
         })(req, res, next)
 
