@@ -1,27 +1,28 @@
-<section class="login flex justify-center">
-    <div class="md:pt-16 md:pb-16">
-      <div class="login-box shadow-lg pt-12">
+<section class="regis flex justify-center">
+    <div class="md:pt-16 md:pb-24">
+      <div class="regis-box shadow-lg pt-12 rounded">
           <form action="/register" method="POST" class="w-full max-w-lg">
             <% if(messages.error) { %>
                 <span class="text-red-500 text-sm"><%= messages.error %></span>
                 <% } %>
             <div class="px-16">
-              <h1 class="text-lg mb-4 font-semibold font-sans">Join Network</h1>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                      First Name
-                    </label>
-                    <input name="firstname" class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First name">
+              <h1 class="text-lg mb-2 font-semibold font-sans">Join Network</h1>
+              <hr class="mt-1 mb-6 mx-auto w-full h-1 bg-gray-500 rounded border-0">
+                <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full px-3 mb-2">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        Email address
+                      </label>
+                      <input name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="email" placeholder="Email address">
                     </div>
-                  <div class="w-full md:w-1/2 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                      Last Name
-                    </label>
-                    <input name="lastname" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Last name">
-                  </div>
+                    <div class="w-full px-3">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        Password
+                      </label>
+                      <input name="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
+                    </div>
                 </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="flex flex-wrap -mx-3 mb-2">
                   <div class="w-full px-3"> 
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
                     Enrollment number
@@ -57,7 +58,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
                       Graduation Year
                     </label>
@@ -85,33 +86,11 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="flex flex-wrap -mx-3">
-                  <div class="w-full px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-email">
-                      Email address
-                    </label>
-                    <input name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-email" type="email" placeholder="Email address">
-                  </div>
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-6">
-                  <div class="w-full px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-                      Password
-                    </label>
-                    <input name="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
-                  </div>
                 </div> 
             </div>
-            <button type="submit">  
-            <div class="ac_button_large ng-isolate-scope" ng-click="createOrUpdateBiolet()" ac-loading="" ng-hide="currentUser.is_official &amp;&amp; !currentUser.can_be_official" text="Submit" has-arrow="true"><div ng-class="{true: 'hidden_text'}[loading]" class="ng-binding">
-                Submit
-              </div>
-              <!-- ngCustomIf: hasArrow --><span class="onboarding_arrow_icon nicon-arrow-right ng-scope" ng-class="{true: 'hidden_text'}[loading]" ng-custom-if="hasArrow"></span><!-- end ngCustomIf: hasArrow -->
-              
-              <!-- ngCustomIf: loading -->
-            </div>
-          </button>         
+            <button type="submit" class="s-button w-full mt-4">  
+            Submit
+            </button>         
             </form>
       </div>
     </div>
