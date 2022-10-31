@@ -58,3 +58,21 @@ nav li a:hover {
   color: #112D4E;
   cursor: pointer;
 }
+
+.tum {
+  background: #ccc;
+}
+
+.tum-box {
+  background: #F9F7F7;
+}
+
+.tum-social {
+  background: #F9F7F7;
+}
+
+.tum-icon {
+  font-size: 30px;
+  padding-top: 1px;
+  padding-right: 6px;
+}
