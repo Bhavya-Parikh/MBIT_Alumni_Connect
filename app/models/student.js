@@ -8,6 +8,11 @@ const studentSchema = new Schema({
     joining_year:{type:String,required:true},
     graduation_year:{type:String,required:true},
     email: {type: String, required: true},
-    password: {type: String, required: true}
+    password: {type: String, required: true},
+    company:{type:String},
+    linkedin:{type:String},
+    twitter:{type:String},
+    instagram:{type:String},
+    github:{type:String}
 })
 module.exports = mongoose.model('Student',studentSchema) 

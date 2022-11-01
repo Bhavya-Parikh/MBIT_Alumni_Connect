@@ -5,71 +5,72 @@
             <% if(messages.error) { %>
                 <span class="text-red-500 text-sm"><%= messages.error %></span>
                 <% } %>
-            <div class="px-16">
-              <h1 class="text-lg mb-2 font-semibold font-sans">Join Network</h1>
-              <hr class="mt-1 mb-6 mx-auto w-full h-1 bg-gray-500 rounded border-0">
-                <div class="flex flex-wrap -mx-3 mb-2">
-                  <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                      First Name
-                    </label>
-                    <input name="firstname" class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First name">                  </div>
-                  <div class="w-full md:w-1/2 px-3">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
-                      Last Name
-                    </label>
-                    <input name="lastname" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Last name">
-                  </div>
-                </div>
-                <div class="w-full mb-2">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-                    Email address
-                  </label>
-                  <input name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="email" placeholder="Email address">
-                </div>
-                <div class="w-full ">
-                  <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-                    Password
-                  </label>
-                  <input name="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-2">
-                  <div class="w-full px-3"> 
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
-                    Enrollment number
-                    </label>
-                    <input name="rollno" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" placeholder="Enrollment number">
-                  </div>
-                </div>
-                <div class="flex flex-wrap -mx-3 mb-2">
-                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
-                    Joining Year
-                    </label>
-                    <div class="relative">
-                      <select name="joining_year" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-500 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
-                        <option selected="selected">From Year</option>
-                        <option>2022</option>
-                        <option>2021</option>
-                        <option>2020</option>
-                        <option>2019</option>
-                        <option>2018</option>
-                        <option>2017</option>
-                        <option>2016</option>
-                        <option>2015</option>
-                        <option>2014</option>
-                        <option>2013</option>
-                        <option>2012</option>
-                        <option>2011</option>
-                        <option>2010</option>
-                        <option>2009</option>
-                      </select>
-                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            <div id="firstpanel">
+              <div class="px-16">
+                <h1 class="text-lg mb-2 font-semibold font-sans">Join Network</h1>
+                <hr class="mt-1 mb-6 mx-auto w-full h-1 bg-gray-500 rounded border-0">
+                  <div class="flex flex-wrap -mx-3 mb-2">
+                    <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name" >
+                        First Name
+                      </label>
+                        <input name="firstname" class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="First name" >                  </div>
+                        <div class="w-full md:w-1/2 px-3">
+                          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+                          Last Name
+                          </label>
+                          <input name="lastname" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="w-full mb-2">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                      Email address
+                      </label>
+                      <input name="email" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="email" placeholder="Email address">
+                    </div>
+                    <div class="w-full ">
+                      <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        Password
+                      </label>
+                      <input name="password" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="password" placeholder="******************">
+                    </div>
+                    <div class="flex flex-wrap -mx-3 mb-2">
+                      <div class="w-full px-3"> 
+                        <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                          Enrollment number
+                        </label>
+                          <input name="rollno" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" placeholder="Enrollment number">
                       </div>
                     </div>
-                  </div>
-                  <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
+                      <div class="flex flex-wrap -mx-3 mb-2">
+                        <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                          <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                            Joining Year
+                          </label>
+                            <div class="relative">
+                              <select name="joining_year" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-500 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <option selected="selected">From Year</option>
+                                    <option>2022</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                    <option>2018</option>
+                                    <option>2017</option>
+                                    <option>2016</option>
+                                    <option>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                    <option>2012</option>
+                                    <option>2011</option>
+                                    <option>2010</option>
+                                    <option>2009</option>
+                                </select>
+                                  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                      <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                                  </div>
+                              </div>
+                          </div>
+                        <div class="w-full md:w-1/2 px-3 mb-2 md:mb-0">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
                       Graduation Year
                     </label>
@@ -98,11 +99,64 @@
                     </div>
                   </div>
                 </div> 
+                
+              </div>
+              <button type="button" class="s-button w-full mt-4" id="btnNext">  
+                Next
+                </button>
+            </div>
+            <!-- next -->
+            <div id="secondpanel">
+              <div class="px-16">
+                <h1 class="text-lg mb-2 font-semibold font-sans">Give more info</h1>
+                <hr class="mt-1 mb-6 mx-auto w-full h-1 bg-gray-500 rounded border-0">
+                <div class="flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3 mb-6 md:mb-0">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                    Company name
+                    </label>
+                    <input name="company" class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Company name">
+                </div>
+                </div>
+                <div class="inline-flex justify-center items-center w-full">
+                    <hr class="my-4 w-full h-1 rounded bg-gray-500 border-0 dark:bg-gray-700">
+                    <span class="tum-social absolute left-1/2 px-3 font-sans text-gray-700 font-semibold text-lg -translate-x-1/2 dark:text-white dark:bg-gray-900">Social handles</span>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="flex w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <i class="tum-icon fa fa-linkedin" aria-hidden="true"></i>
+                    </label>
+                    <input name="linkedin" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-social" type="text" placeholder="Linkedin profile">
+                </div>
+                <div class="flex w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <i class="tum-icon fa fa-twitter" aria-hidden="true"></i>
+                    </label>
+                    <input name="twitter" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-social" type="text" placeholder="Twitter handle">
+                </div>
+                <div class="flex w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <i class="tum-icon fa fa-instagram"></i>
+                    </label>
+                    <input name="instagram" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-social" type="text" placeholder="Instagram id">
+                </div>
+                <div class="flex w-full px-3">
+                    <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">
+                        <i class="tum-icon fa fa-github" aria-hidden="true"></i>
+                    </label>
+                    <input name="github" class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-1 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-social" type="text" placeholder="Github id">
+                </div>
+                </div>
+                <hr class="mt-1 mb-6 mx-auto w-full h-1 bg-gray-500 rounded border-0">
+                <p class="text-gray-600 text-xs italic">Make it as long and as crazy as you'd like</p>
             </div>
             <button type="submit" class="s-button w-full mt-4">  
-            Submit
-            </button>         
+                Submit
+            </button>
             </form>
       </div>
     </div>
+    </div>
   </section>
+

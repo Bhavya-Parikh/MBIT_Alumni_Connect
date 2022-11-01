@@ -30,7 +30,7 @@ function authController(){
                     return next(err)
                 }
 
-                return res.redirect('tell-us-more')
+                return res.redirect('/')
             })
         })(req, res, next)
 
@@ -38,7 +38,7 @@ function authController(){
         res.render('auth/register')
     },
     async postRegister(req, res) {
-     const { rollno,firstname,lastname,joining_year,graduation_year, email, password }   = req.body
+     const { rollno,firstname,lastname,joining_year,graduation_year, email, password,company,linkedin,twitter,instagram,github }   = req.body
      // Validate request 
      if(!firstname || !lastname || !email || !password || !rollno || !joining_year || !graduation_year ) {
          req.flash('error', 'All fields are required')
@@ -77,12 +77,17 @@ function authController(){
          password: hashedPassword,
          rollno,
          joining_year,
-         graduation_year
+         graduation_year,
+         company,
+         linkedin,
+         twitter,
+         instagram,
+         github
      })
 
      student.save().then((student) => {
         // Login
-        return res.redirect('/')
+        return res.redirect('/login')
      }).catch(err => {
         req.flash('error', 'Something went wrong')
             return res.redirect('/register')

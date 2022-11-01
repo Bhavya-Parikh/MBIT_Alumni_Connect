@@ -1,7 +1,7 @@
 //Controller
 const homeController = require('../app/http/controllers/homeController')
 const authController = require('../app/http/controllers/authController')
-const userController = require('../app/http/controllers/userController')
+
 //Middlewares
 const guest = require('../app/http/middlewares/guest')
 const auth = require('../app/http/middlewares/auth')
@@ -22,7 +22,7 @@ function initRoutes(app){
 
     /////////////////////////////////////////////////
 
-    app.get('/tell-us-more',auth,userController().moreinfo)
+    
 }
 
 module.exports = initRoutes

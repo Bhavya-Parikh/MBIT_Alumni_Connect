@@ -1,13 +1,38 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _registerForm__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registerForm */ "./resources/js/registerForm.js");
 
+(0,_registerForm__WEBPACK_IMPORTED_MODULE_0__.form)();
+
+/***/ }),
+
+/***/ "./resources/js/registerForm.js":
+/*!**************************************!*\
+  !*** ./resources/js/registerForm.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "form": () => (/* binding */ form)
+/* harmony export */ });
+function form() {
+  $('#secondpanel').hide('fast');
+  $('#btnNext').on('click', function () {
+    $('#firstpanel').hide('fast', function () {
+      $('#secondpanel').show('fast');
+    });
+  });
+}
 
 /***/ }),
 
@@ -17,7 +42,6 @@
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
@@ -83,6 +107,18 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 				}
 /******/ 			}
 /******/ 			return result;
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	(() => {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
 /******/ 		};
 /******/ 	})();
 /******/ 	

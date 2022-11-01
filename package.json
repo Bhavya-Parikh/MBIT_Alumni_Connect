@@ -38,6 +38,8 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
     "flash": "^1.1.0",
+    "jquery": "^3.6.1",
+    "jsdom": "^20.0.2",
     "mongodb": "^4.11.0",
     "mongoose": "^5.9.25",
     "passport": "^0.6.0",
