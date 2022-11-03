@@ -11,13 +11,6 @@ const flash = require('express-flash')
 const MongoDbStore = require('connect-mongo')(session)
 const passport = require('passport')
 const bodyParser = require('body-parser');
-var jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const { window } = new JSDOM();
-const { document } = (new JSDOM('')).window;
-global.document = document;
-
-var $ = jQuery = require('jquery')(window);
 
 
 
