@@ -74,9 +74,10 @@ nav li a:hover {
 }
 
 .main {
-  height: 800px;
-  background-image: url("/img/main-bg.png");
-  background-size: cover;
+  height: 600px;
+  background-image: url("/img/main-bg.jpg");
+  background-size: 100% 600px;
+  background-repeat: no-repeat;
 }
 
 .button-53 {
@@ -133,23 +134,44 @@ nav li a:hover {
   }
 }
 .m-t {
+  height: 500px;
   text-align: center;
-  padding-top: 90px;
+  padding-top: 150px;
+  padding-left: 260px;
 }
 
 .m-text {
-  font-size: 70px;
+  font-size: 50px;
+  padding-bottom: 10px;
 }
 
 .part-2 {
   background-color: #F9F7F7;
 }
 
+.c-text {
+  font-size: 30px;
+}
+
 .community {
-  height: 1000px;
+  height: 730px;
 }
 
 .ab-img {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
+}
+
+.card {
+  height: 700px;
+}
+
+footer {
+  height: 100px;
+}
+
+.foot-icon {
+  color: #112D4E;
+  padding-top: 25px;
+  font-size: 40px;
 }
