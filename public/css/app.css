@@ -41,6 +41,10 @@ nav li a:hover {
   cursor: pointer;
 }
 
+.log {
+  height: 585px;
+}
+
 .login-s-button {
   background: #3F72AF;
   transition: all 0.3s ease-in-out;
@@ -174,4 +178,13 @@ footer {
   color: #112D4E;
   padding-top: 25px;
   font-size: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.foot-icon:hover {
+  color: #3F72AF;
+}
+
+.submitted {
+  height: 590px;
+  text-align: center;
 }
