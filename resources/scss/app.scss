@@ -46,6 +46,9 @@ nav li a {
 }
 
 //login 
+.log {
+  height: 585px;
+}
 
 .login-s-button{
     background: $primary;
@@ -190,4 +193,15 @@ nav li a {
     color: $primary-hover;
     padding-top: 25px;
     font-size: 40px;
+    transition: $smooth;
+    &:hover{
+      color: $primary;
+    }
   }
+
+  //submition
+  .submitted{
+    height: 590px;
+    text-align: center;
+  }
+
